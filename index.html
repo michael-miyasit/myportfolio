@@ -4,106 +4,99 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOTTON - 目黒のアンティーク家具専門店</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="CSS/styles.css">
-  <link rel="icon" href="img/favicon.png">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script src="https://kit.fontawesome.com/ce19639fb2.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/mainIcom.png"   type="image/x-icon">
 </head>
 <body>
+<section class="navWrapper">
+  <a href="#" class="topBtn"><i class="fa-solid fa-angle-up"></i></a> 
+  <div class="nav">
+    <a href="#about">about</a>
+    <a href="#works">works</a>
+    <a href="#skills">skills</a>
+    <a href="#contact">contact</a>
+  </div>
 
-  <header>
-
-
-    <div class="container">
-      <a href="index.html">
-        <h1><img src="img/logo.png" alt="BOTTON" width="168" height="48" ></h1>
-      </a> 
-      <form action="">
-        <input type="text" name="" id="">
-        <button><i class="bi bi-search"></i></button>
-      </form>
-      <nav>
-        <ul>
-          <li><a href="#">
-            <i class="bi bi-person-circle"></i>
-            ログイン
-          </a></li>
-          <li><a href="#">
-            <i class="bi bi-cart4"></i>
-            カート
-          </a></li>
-        </ul>
-      </nav>
+</section>
+<header>
+  <div class="title">
+    <h1>Michael Miyasita</h1>
+  </div>
+  <div class="sns">
+    <ul>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+    </ul>
+  </div>
+</header>
+<section class="heroWrapper">
+  <img src="img/header_img.jpg" alt="夜景">
+</section>
+<section class="aboutWrapper" id="about">
+  <h2 class="subTitle">about</h2>
+  <div class="container">
+    <div class="text">
+      <p>
+        <span> 宮下 Michael</span><br>
+        駆け出しプログラマーの大学生 <br>
+        2003年10月4日生まれ。<br><br>
+        高校生の三年間で飲食店でのアルバイトをしてきました。しかし、将来に役立つ収入源がほしいと思い、独学でウェブ制作について学習することにしました。 <br> 
+        これから実務経験をどんどん積んでいき、手に職つけたいと考えていますので、やる気は人一倍あります！ <br><br> 座右の銘は’大器晩成’。
+      </p>
     </div>
-  </header>
+  </div>
+</section>
+<section class="worksWrapper" id="works">
+  <h2 class="subTitle">works</h2>
+  <div class="container">
+    <ul id="ul">
+      <li><a href="https://michael-miyasit.github.io/ECsite/"><img src="img/ECsite.png" alt="ECサイト"></a></li>
+      <li><a href="../../mytest/サイト模写一回目 2022年2月16日/index.html"><img src="img/sitecopy1.png" alt="サイト模写１"></a></li>
+      <li><a href="../../mytest/サイト模写二回目 2022年2月22日/index.html"><img src="img/sitecopy2.png" alt="サイト模写２"></a></li>
+      <li><a href="../../mytest/sitecopy part3/index.html"><img src="img/sitecopy3.png" alt="サイト模写３"></a></li>
+    </ul>
 
-  <section class="hero">
+    <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
 
-    <img src="img/hero1.png" alt="素敵なソファ" width="calc(100% - 36)"  class="current">
-    <img src="img/hero2.png" alt="素敵な黒いソファ" width="calc(100% - 36)">
-    <img src="img/hero3.png" alt="素敵な2つソファ" width="calc(100% - 36)" >
-  </section>
+  <nav>
+    <!-- <button class="current"></button>
+    <button></button>
+    <button></button> -->
+  </nav>
+</section>
+<section class="skillsWrapper" id="skills">
+  <h2 class="subTitle">skills</h2>
+  <div class="container">
+    <ul class="text">
+      <li>
+        <i class="fa-brands fa-html5"></i> <p>html 5</p>
+      </li>
+      <li>
+        <i class="fa-brands fa-css3-alt"></i> <p>css 3</p>
+      </li>
+      <li>
+        <i class="fa-brands fa-js-square"></i> <p>javascript</p><span>・・・学習中</span>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="contactWrapper" id="contact">
+  <h2 class="subTitle">contact</h2>
+  <div class="container">
+    <div class="gmail"><a href="#">gmail</a></div>
+    <div class="mail"><a href="#">mail</a></div>
+  </div>
+</section>
+<footer>
 
-  <section class="products">
+</footer>
 
-    <div class="container">
-      <h1>OUR ITEMS</h1>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/pic1.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/pic2.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/pic3.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/pic4.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/pic5.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="more">もっと見る</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <small>(c)bottonstall</small>
-      <div class="sns">
-        <ul>
-          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-
-
-
-  <script src="js/main2.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
