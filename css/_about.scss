@@ -1,0 +1,156 @@
+@use "common";
+@use "template";
+
+.portfolio {
+                /* about */
+    .portfolio__about {
+        
+        &_Wrapper {
+            margin: 0 auto;
+            width: 100%;
+            height: 90vh;
+            text-align: center;
+            background-color: hsl(200, 70%, 25%);
+            color: #fff;
+
+            .subTitle {
+                color: #fff;
+                margin-top: 50px;
+                border-color: #fff;
+            }
+        }
+
+        &_content {
+            position: relative;
+        }
+
+        &_img {
+            width: 50%;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+
+        &_text{
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.7rem;
+            font-weight: 200;
+            text-align-last: left;
+            letter-spacing: 1px;
+
+            &Wrapper {
+                position: absolute;
+                top: 150px;
+                left: 20px;
+                z-index: 5;
+                margin-top: 30px;
+                width: 50%;
+                padding: 50px;
+                background-color: hsl(200, 70%, 25%);
+                background-color: template.$main-color;
+            }
+
+            &Name {
+                font-weight: normal;
+                font-size: 20px;
+            }
+        }
+
+        
+    }
+
+    // レスポンシブ
+    @media (min-width: 1201px) {
+        .portfolio__about {
+
+            &_Wrapper {
+                height: 850px;
+
+        }
+
+
+            &_textWrapper {
+                top: 180px;
+            }
+            &_img {
+                width: 45%;
+                top: 0px;
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        .portfolio__about {
+
+            &_img {
+                width: 40%;
+                top: -200px;
+                right: 75px;
+            }
+    
+            &_text{
+                margin-top: 30px;
+                font-size: 14px;
+                line-height: 1.2;
+
+                &Wrapper {
+                    position: static;
+                    margin: 170px auto 0 0;
+                    width: 60%;
+                }
+    
+                &Name {
+                    position: absolute;
+                    left: 30px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .portfolio__about {
+
+            &_Wrapper {
+                height: 120vh;
+            }
+    
+
+            &_img {
+                position: static;
+                margin: 0 auto;
+                width: 72vw;
+            }
+    
+            &_text{
+    
+                &Wrapper {
+                    margin: 0 auto;
+                }
+    
+                &Name {
+                    position: static;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .portfolio__about {
+
+            &_Wrapper {
+                height: 900px;
+            }
+
+            &_img {
+                width: 79vw;
+            }
+
+            &_text {
+                &Name {
+                    position: absolute;
+                    left: 76px;
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+
+}

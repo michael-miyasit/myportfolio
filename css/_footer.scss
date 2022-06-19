@@ -1,0 +1,42 @@
+
+.portfolio {
+    .footer{
+
+        &_wrapper {
+            margin-top: 150px;
+            height: 200px;
+            position: relative;
+            background-color: hsl(0, 0%, 10%);
+            overflow: hidden;
+        }
+
+        &_logo {
+            width: 35vw;
+            min-width: 500px;
+            transition: .5s;
+            opacity: .4;
+            overflow: hidden;
+            position: absolute;
+            top: -8vw;
+            left: 10%;
+        }
+
+        &_nav {
+            display: flex;
+            width: 300px;
+            height: 50px;
+            margin: 70px auto 0;
+            opacity: .6;
+        }
+
+        &_copyright {
+            color: #fff;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+        }
+
+    }
+}

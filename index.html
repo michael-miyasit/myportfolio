@@ -1,102 +1,255 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
+  <!-- meta tag -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- site title -->
   <title>portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css">
+  <link rel="shortcut icon" href="img/logo (2).png"   type="image/x-icon">
+
+  <!-- add css -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  
+  <!-- add js -->
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ce19639fb2.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="img/mainIcom.png"   type="image/x-icon">
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script rel="stylesheet" href="js/main.js" type="text/css"></script>
+  <script async src="../js/ham.js" type="text/javascript"></script>
+
+
+
 </head>
-<body>
-<section class="navWrapper">
-  <a href="#" class="topBtn"><i class="fa-solid fa-angle-up"></i></a> 
-  <div class="nav">
-    <a href="#about">about</a>
-    <a href="#works">works</a>
-    <a href="#skills">skills</a>
-    <a href="#contact">contact</a>
-  </div>
 
-</section>
-<header>
-  <div class="title">
-    <h1>Michael Miyasita</h1>
-  </div>
-  <div class="sns">
-    <ul>
-      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-    </ul>
-  </div>
-</header>
-<section class="heroWrapper">
-  <img src="img/header_img.jpg" alt="夜景">
-</section>
-<section class="aboutWrapper" id="about">
-  <h2 class="subTitle">about</h2>
-  <div class="container">
-    <div class="text">
-      <p>
-        <span> 宮下 Michael</span><br>
-        駆け出しプログラマーの大学生 <br>
-        2003年10月4日生まれ。<br><br>
-        高校生の三年間で飲食店でのアルバイトをしてきました。しかし、将来に役立つ収入源がほしいと思い、独学でウェブ制作について学習することにしました。 <br> 
-        これから実務経験をどんどん積んでいき、手に職つけたいと考えていますので、やる気は人一倍あります！ <br><br> 座右の銘は’大器晩成’。
-      </p>
+<body class="portfolio">
+
+  <!-- header contents -->
+  <header class="header" id="header">
+    <div class="logo">
+      <a href="#"><img src="img/logo (3).png" alt=""></a>
     </div>
-  </div>
-</section>
-<section class="worksWrapper" id="works">
-  <h2 class="subTitle">works</h2>
-  <div class="container">
-    <ul id="ul">
-      <li><a href="https://michael-miyasit.github.io/ECsite/"><img src="img/ECsite.png" alt="ECサイト"></a></li>
-      <li><a href="https://michael-miyasit.github.io/site_copy1/"><img src="img/sitecopy1.png" alt="サイト模写１"></a></li>
-      <li><a href="https://michael-miyasit.github.io/site_copy2/"><img src="img/sitecopy2.png" alt="サイト模写２"></a></li>
-      <li><a href="https://michael-miyasit.github.io/site_copy3/"><img src="img/sitecopy3.png" alt="サイト模写３"></a></li>
-    </ul>
+    <div class="nav">
+      <div class="navBtn" id="js-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navWrap" id="js-wrap">
+        <a href="#works" class="navItem navA"><span>works</span></a>
+        <a href="#about" class="navItem navA"><span>about</span></a>
+        <a href="#skills" class="navItem navA"><span>skills</span></a>
+        <a href="#contact" class="navItem navA"><span>contact</span></a>
+      </ul>
+      <div class="overlay" id="js-overlay"></div>
+    </div>
+    <!-- <div class="nav">
+      <div class="navBtn" id="js-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <ul class="navWrap" id="js-wrap">
+          <li class="navItem"><a href="#">HOME</a></li>
+          <li class="navItem"><a href="#">ABOUT</a></li>
+          <li class="navItem"><a href="#">COMPANY</a></li>
+          <li class="navItem"><a href="#">WORKS</a></li>
+          <li class="navItem"><a href="#">CONTACT</a></li>
+      </ul>
+      <div id="js-overlay" class="overlay"></div>
+  </div> -->
+    
+  </header>
 
-    <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
-    <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
-  </div>
+  <!-- hero contents -->
+  <section class="hero" id="hero">
+    <div class="videoArea">
+      <video class="video" webkit-playsinline playsinline muted autoplay loop>
+        <source  src="img/cityRaps.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="textArea">
+      <h1 class="name">Michael Miyasita</h1>
+      <ul class="sns">
+        <li><a href="https://twitter.com/MichaelMiyasita"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScP8lwP1wZtpMFJ59_VjFNSCA9kCHFZwaUSD83hpEB3g7sPLg/viewform?usp=sf_link"><i class="fa-brands fa-google"></i></a></li>
+      </ul>
+    </div>
+    <h1 class="title">PORTFOLIO</h1>
+  </section>
 
-  <nav>
-    <!-- <button class="current"></button>
-    <button></button>
-    <button></button> -->
-  </nav>
-</section>
-<section class="skillsWrapper" id="skills">
-  <h2 class="subTitle">skills</h2>
-  <div class="container">
-    <ul class="text">
-      <li>
-        <i class="fa-brands fa-html5"></i> <p>html 5</p>
-      </li>
-      <li>
-        <i class="fa-brands fa-css3-alt"></i> <p>css 3</p>
-      </li>
-      <li>
-        <i class="fa-brands fa-js-square"></i> <p>javascript</p><span>・・・学習中</span>
-      </li>
-    </ul>
-  </div>
-</section>
-<section class="contactWrapper" id="contact">
-  <h2 class="subTitle">contact</h2>
-  <div class="container">
-    <div class="gmail"><a href="#">gmail</a></div>
-    <div class="mail"><a href="#">mail</a></div>
-  </div>
-</section>
-<footer>
+  <!-- main contents -->
+  <main id="maincontent">
 
-</footer>
+    <!-- works -->
+    <section id="works" class="worksWrapper">
+      <h2 class="subTitle">works</h2>
+      <ul id="slider" class="worksWrapper_slider">
+        <li class="worksWrapper_sliderWork"><a href="https://michael-miyasit.github.io/ECsite/">
+          <div class="imgArea">
+            <img src="img/ECsite.png" alt="ECサイト">
+          </div>
+          <div class="titleArea">2022/01/17</div>
+          <div class="textArea">
+            <p>はじめてのサイト作りで、ドットインストールのレッスンを参考に作成しました。レスポンシブデザイン対応で、背景が自動で変化するJavaScriptを実装しました。</p>
+          </div>
+        </a></li>
+        <li class="worksWrapper_sliderWork"><a href="https://michael-miyasit.github.io/site_copy1/">
+          <div class="imgArea">
+            <img src="img/sitecopy1.png" alt="模写サイト">
+          </div>
+          <div class="titleArea">2022/02/04</div>
+          <div class="textArea">
+            <p>はじめて既存のサイトを模写して作ったサイトになります。この頃はまだYoutubeの解説動画を見ながらサイトの一部を作ることが精一杯でした。</p>
+          </div>
+        </a></li>
+        <li class="worksWrapper_sliderWork"><a href="https://michael-miyasit.github.io/site_copy2/">
+          <div class="imgArea">
+            <img src="img/sitecopy2.png" alt="模写サイト">
+          </div>
+          <div class="titleArea">2022/02/15</div>
+          <div class="textArea">
+            <p>二回目の模写サイト。こちらもyoutubeの動画をみながら作成したサイトになります。今回は１ページまるまる作ることに成功しました。</p>
+          </div>
+        </a></li>
+        <li class="worksWrapper_sliderWork"><a href="https://michael-miyasit.github.io/site_copy3/">
+          <div class="imgArea">
+            <img src="img/sitecopy3.png" alt="模写サイト">
+          </div>
+          <div class="titleArea">2022/03/4</div>
+          <div class="textArea">
+            <p>三回目の模写サイトになります。こちらもyoutubeをみながら作成しましたが、先ほどよりもう少しレベルのたかいサイトを作成しました。技術の向上を実感しました。</p>
+          </div>
+        </a></li>
+        <li class="worksWrapper_sliderWork"><a href="https://michael-miyasit.github.io/site_copy5/">
+          <div class="imgArea">
+            <img src="img/siteCopy5.png" alt="自作サイト">
+          </div>
+          <div class="titleArea">2022/04/10</div>
+          <div class="textArea">
+            <p>こちらは企業への入社の際に作成したサイトになります。WordPressの有料テーマを参考に自分で模写して作ったものになります。このから、開発者、ユーザーともに分かりやすいサイトを作ることを意識しだしました。</p>
+          </div>
+        </a></li>
+      </ul>
+  
+      <nav>
+  
+      </nav>
+    </section>
 
-<script src="js/main.js"></script>
+    <!-- about -->
+    <section class="portfolio__about_Wrapper" id="about">
+      <h2 class="subTitle">about</h2>
+      <div class="portfolio__about_content">
+        <figure class="portfolio__about_img">
+          <img src="img/kyouryuu.jpg" alt="恐竜の画像">
+        </figure>
+        <div class="portfolio__about_textWrapper">
+          <span class="portfolio__about_textName"> 宮下 Michael（みやした ミカエル）</span><br>
+          <p class="portfolio__about_text">
+            駆け出しプログラマーの大学生 <br>
+            &nbsp;高校生の三年間、飲食店でのアルバイトをしてきました。しかし、将来に役立つ技能がほしいと思い、独学でウェブ制作について学習することにしました。 <br> 
+            &nbsp;プログラミングの専門学校に通っている兄の手伝いもあり、なんどか実務経験もあります。<br>
+            &nbsp;昔から、変にこだわる癖があるので、制作するwebサイトも変にこだわって、ほかのサイトとの差別化をはかろうとおもいます！
+            <br>
+            &nbsp;また、人に負けない向上心と自負しておりますので、作るサイトは常に自分の中での最新の技術、知識を用いたものとなります。<br>
+            どうぞよろしくおねがいします。 <br><br> 座右の銘は’大器晩成’。
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- skills -->
+    <section class="portfolio_skills" id="skills">
+      <!-- <figure class="portfolio_skills_img">
+        <img src="img/back-img_html.jpg" alt="背景画像">
+      </figure> -->
+      <h2 class="subTitle">skills</h2>
+      <div class="portfolio_skills_container">
+        <ul class="portfolio_skills_list">
+          <li class="portfolio_skills_listItem">
+            <i class="fa-brands fa-html5"></i> 
+            <p class="portfolio_skills_listText">html 5</p>
+          </li>
+          <li class="portfolio_skills_listItem">
+            <i class="fa-brands fa-css3-alt"></i> 
+            <p class="portfolio_skills_listText">css 3</p>
+          </li>
+          <li class="portfolio_skills_listItem">
+            <i class="fa-brands fa-js-square"></i> 
+            <p class="portfolio_skills_listText">javascript</p>
+            <span class="portfolio_skills_listNote">学習中</span>
+          </li>
+          <li class="portfolio_skills_listItem">
+            <i class="fa-brands fa-php"></i> 
+            <p class="portfolio_skills_listText">PHP</p>
+            <span class="portfolio_skills_listNote">学習中</span>
+          </li>
+          <li class="portfolio_skills_listItem">
+            <i class="fa-brands fa-wordpress-simple"></i> 
+            <p class="portfolio_skills_listText">WordPress</p>
+            <span class="portfolio_skills_listNote">学習中</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- contact -->
+    <section class="portfolio__contact_wrapper" id="contact">
+      <h2 class="subTitle">contact</h2>
+      <ul class="portfolio__contact_list">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScP8lwP1wZtpMFJ59_VjFNSCA9kCHFZwaUSD83hpEB3g7sPLg/viewform?usp=sf_link">
+          <li class="portfolio__contact_listItem">
+          <i class="portfolio__contact_listIcon fa-brands fa-google"></i>
+          <div class="portfolio__contact_listText">Google</div>
+          </li>
+        </a>
+        <a href="https://twitter.com/MichaelMiyasita">
+          <li class="portfolio__contact_listItem">
+          <i class="portfolio__contact_listIcon fa-brands fa-twitter"></i>
+          <div class="portfolio__contact_listText">Twitter</div>
+          </li>
+        </a>
+      </ul>
+    </section>
+
+  </main>
+  <!-- main contents end -->
+
+  <!-- footer content -->
+  <footer>
+    <div class="footer_wrapper">
+      <figure class="footer_logo">
+        <img src="img/logo (3).png" alt="">
+      </figure>
+      <div class="footer_nav">
+        <a href="#work" class="hovA">work</a>
+        <a href="#about" class="hovA">about</a>
+        <a href="#skills" class="hovA">skills</a>
+        <a href="#contact" class="hovA">contact</a>
+      </div>
+      <p class="footer_copyright">©&nbsp;2022&nbsp;MIYASITA&nbsp;MICHAEL</p>
+    </div>
+    
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script rel="stylesheet" href="js/main.js" type="text/css"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ce19639fb2.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+
+.portfolio {
+    .portfolio__contact {
+        &_wrapper {
+
+            text-align: center;
+            margin-top: 100px;        
+        }
+
+        &_list {
+
+            &Item{
+                width: 100px;
+                display: flex;
+                margin: 0 auto;
+                justify-content: space-between;
+            }
+        
+            a {
+                width: 60%;
+                border: 2px solid #ddd;
+                padding: 10px ;
+                margin: 30px auto;
+                color: #2a6e8f;
+                transition: .3s;
+
+                &:hover {
+                    background-color: #2a6e8f;
+                    color: #fff;
+                }
+            }
+
+            &Icon {
+                font-size: 1.5rem;
+            }
+
+            &Text {
+                margin-top: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+}

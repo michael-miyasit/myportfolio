@@ -1,0 +1,60 @@
+
+.portfolio {
+    .portfolio_skills{
+        padding-top: 100px;
+        text-align: center;
+        height: 600px;
+        background-image: url(../img/back-img_html.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .subTitle {
+            color: #fff;
+            border-color: #fff;
+        }
+    
+        &_list {
+            text-align: center;
+            display: flex;
+            gap: 10%;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &Item {
+                border-radius: 5px;
+                width: 20%;
+                height: 120px;
+                min-width: 150px;
+                font-size: 4rem;
+                background: rgba(255, 255, 255, 0.687);
+                color: #2a6e8f;
+                padding-top: 15px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                box-shadow: 5px 5px 3px #111;
+                position: relative;
+            }
+            
+            &Text {
+                margin-top: 10px;
+                font-size: 1.3rem;
+                font-weight: bold;    
+            }
+
+            &Note {
+                font-size: .8rem;
+                position: absolute;
+                top: 5px;
+                right: 10px;
+            }
+        }
+    
+    }
+
+    @media (max-width: 600px) {
+        .portfolio_skills{
+            height: 700px;
+    
+        }
+    }
+}

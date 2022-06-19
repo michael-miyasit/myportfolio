@@ -1,0 +1,130 @@
+@use "common";
+
+.portfolio {
+    .worksWrapper {
+        text-align: center;
+        margin: 100px auto;
+        width: 60%;
+
+        .tt {
+            margin-bottom: 50px;
+        }
+        
+        &_slider {  
+            display: flex; 
+
+            &Work {
+                position: relative;
+               &:hover .textArea {
+                background: #eee;
+                } 
+                &:hover img {
+                transform: scale(1.1);
+                }
+
+                .imgArea {
+                overflow: hidden;
+                img {
+                    width: 400px;
+                    height: 200px; 
+                    object-fit: cover;
+                    transition: .3s;
+                } 
+                }
+                .titleArea {
+                position: absolute;
+                top: 157px; 
+                padding: 15px;
+                background: hsl(200, 70%, 60%);
+                color: #fff;
+                font-size: .8rem;
+                }
+                .textArea {
+                border: 1px solid #bbb;
+                height: 200px;
+                p {
+                    padding: 30px; 
+                    letter-spacing: 1px;
+                    line-height: 1.3rem;
+                    font-size: 0.8rem;
+                    font-weight: 100;
+                    text-align: left;
+                }
+                }
+            }
+
+            .prev,
+            .next {
+              position: absolute; 
+              display: inline-block; 
+              top: 50%;  
+              background: rgb(255, 255, 255);
+              color: #bbb;
+              font-size: 2rem; 
+              z-index: 30; 
+              cursor: pointer;
+              transition: .3s; 
+            }
+            .prev {
+              left: -50px;
+            }
+            .next {
+              right: -50px;
+            }
+            .prev:hover,
+            .next:hover {
+              opacity: .5;
+            }
+
+        }
+    }
+
+    // レスポンシブ
+    @media (max-width: 1240px) {
+      .worksWrapper {
+        width: 80%;
+
+        &_slider {  
+
+            &Work {
+                .textArea {
+                p {
+
+                    padding: 10px;
+                }
+                }
+            }
+        }
+    }
+    }
+    @media (max-width: 768px) {
+      .worksWrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    }
+
+    @media (max-width: 460px) {
+      .worksWrapper {
+        &_slider {  
+
+          &Work {
+            .titleArea {
+              top: 175px; 
+              padding: 8px;
+              font-size: .6rem;
+              }
+            .textArea {
+              p {
+                  letter-spacing: 0px;
+                  line-height: 1rem;
+                  font-size: 0.7rem;
+
+                  padding: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+}
